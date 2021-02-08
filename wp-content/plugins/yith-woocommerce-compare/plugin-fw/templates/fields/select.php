@@ -51,7 +51,7 @@ if ( $multiple && ! is_array( $value ) ) {
 			<option value="<?php echo esc_attr( $key ); ?>"
 				<?php
 				if ( $multiple ) {
-					selected( true, in_array( $key, $value, true ) );
+					selected( true, in_array( $key, $value ) ); // phpcs:ignore WordPress.PHP.StrictInArray.MissingTrueStrict
 				} else {
 					selected( $key, $value );
 				}

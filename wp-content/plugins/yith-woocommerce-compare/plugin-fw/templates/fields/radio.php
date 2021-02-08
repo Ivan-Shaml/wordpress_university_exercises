@@ -32,7 +32,12 @@ $class = 'yith-plugin-fw-radio ' . $class;
 					value="<?php echo esc_attr( $key ); ?>"
 				<?php checked( $key, $value ); ?>
 			/>
-			<label for="<?php echo esc_attr( $radio_id ); ?>"><?php echo wp_kses_post( $label ); ?></label>
+			<label for="<?php echo esc_attr( $radio_id ); ?>">
+				<?php
+				// HTML allowed!
+				echo $label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				?>
+			</label>
 		</div>
 	<?php endforeach; ?>
 </div>
