@@ -392,19 +392,19 @@ footer {
 	border-top: 1px solid rgba(0,0,0,0.1);
 }
 footer.ffoot {margin-top: 0;}
-footer p {
-	font-size: 13px;
+
+footer ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 7px;
+}
+footer ul li a{
+	font-size: 12px;
 	line-height: 25px;
-	color: #fff;
+	color: #fff !important;
 }
-footer p a { 
-	font-size: 13px;
-	line-height: 24px;
-	text-transform: uppercase;
-	letter-spacing: 0.055em;
-	color: #fff;
-}
-footer p a:hover { color: #a93c01; }
+footer ul li a:hover { color: #a93c01 !important; }
+
 footer .social a {
 	display: inline-block;
 	margin: 0 2px;
